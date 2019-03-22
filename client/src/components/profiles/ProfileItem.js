@@ -25,7 +25,7 @@ class ProfileItem extends Component {
                 <span>{profile.location}</span>
               )}
             </p>
-            <Link to={`/profile/${profile.handle}`} className="btn btn-info">
+            <Link to={`/profile/${profile.handle}`} className="btn btn-dark">
               View Profile
             </Link>
           </div>
@@ -33,8 +33,11 @@ class ProfileItem extends Component {
             <h4>Skill Set</h4>
             <ul className="list-group">
               {profile.skills.slice(0, 4).map((skill, index) => (
-                <li key={index} className="list-group-item">
-                  <i className="fa fa-check pr-1" />
+                <li
+                  key={index}
+                  className="list-group-item list-group-item-action"
+                >
+                  <i className="fa fa-angle-right pr-1" />
                   {skill}
                 </li>
               ))}

@@ -20,7 +20,7 @@ class Landing extends Component {
                 <h3 className="lead"> Social Network for Developers</h3>
                 <p className="lead"> Create a New Profile</p>
                 <hr />
-                <Link to="/register" className="btn btn-lg btn-primary mr-2">
+                <Link to="/register" className="btn btn-lg btn-dark mr-2">
                   Sign Up
                 </Link>
                 <Link to="/login" className="btn btn-lg btn-light">
